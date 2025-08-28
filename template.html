@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Linking Guide</title>
+    <!-- Linking to external CSS in the styles subdirectory -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- Linking to external JavaScript in the scripts subdirectory -->
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Linking & Resources Made Simple</h1>
+      <p>Learn how to link between pages and reference external files</p>
+    </header>
+
+    <div>
+      <div>
+        <h2>Linking to Other Pages</h2>
+        <p>
+          To link to other HTML pages in the same directory, simply use the
+          filename:
+        </p>
+
+        <pre>
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+            </pre
+        >
+
+        <h3>Try these links:</h3>
+        <div>
+          <p><a href="#about">About Page (simulated)</a></p>
+          <p><a href="#contact">Contact Page (simulated)</a></p>
+          <p><a href="#services">Services Page (simulated)</a></p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Using External Resources</h2>
+        <p>
+          To use CSS and JS files from subdirectories, reference them in your
+          HTML:
+        </p>
+
+        <pre>
+&lt;!-- In your &lt;head&gt; section --&gt;
+&lt;link rel="stylesheet" href="styles/main.css"&gt;
+&lt;script src="scripts/app.js"&gt;&lt;/script&gt;
+            </pre
+        >
+
+        <div>
+          <p><strong>Note:</strong> The same method works for images:</p>
+          <pre>
+&lt;img src="images/logo.png" alt="Logo"&gt;
+                </pre
+          >
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Folder Structure Example</h2>
+      <p>Organize your project like this:</p>
+
+      <pre>
+my-website/
+├── index.html
+├── about.html
+├── contact.html
+├── styles/
+│   └── main.css
+├── scripts/
+│   └── app.js
+└── images/
+    ├── logo.png
+    └── banner.jpg
+        </pre
+      >
+
+      <div>
+        <p>
+          <strong>Remember:</strong> Always use relative paths. If your HTML
+          file is in a subfolder, you may need to use <code>../</code> to go up
+          one directory level.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Simple HTML Linking Example | Created for educational purposes</p>
+    </footer>
+  </body>
+</html>
