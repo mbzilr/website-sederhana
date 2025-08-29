@@ -1,0 +1,17 @@
+h1, h2, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#img1 {
+    border-style: solid;
+    border-color: blue;
+}
+
+#img2 {
+    border-style: solid;
+}
+
+a {
+    text-decoration: underline;
+    color: #0000FF;
+}
